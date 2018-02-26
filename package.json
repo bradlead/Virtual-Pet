@@ -1,0 +1,22 @@
+{
+  "name": "virtual_pet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeallen76/Virtual-pet.git"
+  },
+  "author": "joe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeallen76/Virtual-pet/issues"
+  },
+  "homepage": "https://github.com/joeallen76/Virtual-pet#readme",
+  "devDependencies": {
+    "jest": "^22.4.2"
+  }
+}
