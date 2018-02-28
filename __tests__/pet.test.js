@@ -51,3 +51,12 @@ describe('constructor', () => {
         expect(pet.fitness).toEqual(8)
     });
 });
+
+describe('constructor', () => {
+    it('Tamagotchi gets fitter but no more than a level of 10', () => {
+        const pet = new Pet('Fido');
+        pet.fitness = 8;
+        pet.walk();
+        expect(pet.fitness).toEqual(10);
+    });
+});

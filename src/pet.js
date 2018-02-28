@@ -18,8 +18,13 @@ Pet.prototype.growUp = function() {
 }
 
 Pet.prototype.walk = function() {
-    this.fitness += 4;
+   if ((this.fitness + 4) <= 10 ) {
+       this.fitness += 4;
+   } else {
+       this.fitness = 10;
+   }
 }
+
 const pet = {
     name: 'Fido',
 };
