@@ -1,14 +1,21 @@
 function Pet() {}
-module.exports = Pet;
+function age() {}
+function hunger() {}
+function fitness() {}
+module.exports = Pet, age, hunger, fitness;
 
 function Pet(name) {
-    this.name = 'Fido';
+    this.name = name;
     this.age = 0;
+    this.hunger = 0;
+    this.fitness = 10;
 }
 
 Pet.prototype.growUp = function() {
     this.age += 1;
-};
+    this.hunger += 5;
+    this.fitness -= 3;
+}
 const pet = {
     name: 'Fido',
 };

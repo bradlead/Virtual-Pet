@@ -28,3 +28,10 @@ describe('constructor', () => {
         expect(pet.age).toEqual(1);
     });
 });
+
+describe('constructor', () => {
+    it('Makes the Tamagotchi hungrier', () => {
+        const pet = new Pet('Fido');
+        expect(pet.hunger).toEqual(0)
+    });
+});
