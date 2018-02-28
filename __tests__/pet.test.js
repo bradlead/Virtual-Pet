@@ -112,3 +112,27 @@ describe('constructor', () => {
         expect(console.log('I feel great!'))
     });
 });
+
+describe('constructor', () => {
+    it('Checks if your Tamagotchi is alive', () => {
+        const pet = new Pet('Fido');
+        pet.fitness <= 0;
+        expect(false)
+    });
+});
+
+describe('constructor', () => {
+    it('Checks if your Tamagotchi is alive', () => {
+        const pet = new Pet('Fido');
+        pet.hunger >= 10;
+        expect(false)
+    });
+});
+
+describe('constructor', () => {
+    it('Checks if your Tamagotchi is alive', () => {
+        const pet = new Pet('Fido');
+        pet.age >= 30
+        expect(false)
+    });
+});
