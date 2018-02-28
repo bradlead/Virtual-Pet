@@ -3,7 +3,8 @@ function age() {}
 function hunger() {}
 function fitness() {}
 function feed() {}
-module.exports = Pet, age, hunger, fitness, feed;
+function checkUp() {}
+module.exports = Pet, age, hunger, fitness, feed, checkUp;
 
 function Pet(name) {
     this.name = name;
@@ -33,7 +34,22 @@ Pet.prototype.feed = function() {
         this.hunger = SO_FULL_IT_CANT_MOVE
     }
 }
+Pet.prototype.checkUp = function() {
+    if (pet.fitness >= GAINING_WEIGHT)
+    console.log('I need a walk');
 
+    if (pet.hunger <= STARVING)
+    console.log('I am hungry');
+
+    if ((pet.fitness >= GAINING_WEIGHT) && (pet.hunger >= STARVING))
+    console.log('I am hungry AND I need a walk');
+
+    if ((pet.fitness < GAINING_WEIGHT) && (pet.hunger < STARVING))
+    console.log('I feel great!')
+}
+
+const STARVING = 5
+const GAINING_WEIGHT = 3
 const SO_FULL_IT_CANT_MOVE = 0
 const MAXIMUM_FITNESS = 10  
 const pet = {

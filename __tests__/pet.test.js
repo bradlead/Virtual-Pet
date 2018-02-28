@@ -78,3 +78,37 @@ describe('constructor', () => {
         expect(pet.hunger).toEqual(0);
     });
 });
+
+describe('constructor', () => {
+    it('Checks on the little fella, Are you hungry buddy?', () => {
+        const pet = new Pet('Fido');
+        pet.hunger <= 5;
+        pet.checkUp();
+        expect(console.log('I am hungry'))
+    });
+});
+
+describe('constructor', () => {
+    it('Checks on the little fella, Wanna go for a walk buddy?', () => {
+        const pet = new Pet('Fido');
+        pet.fitness >= 3;
+        pet.checkUp();
+        expect(console.log('I need a walk!'))
+    });
+});
+
+describe('constructor', () => {
+    it('Checks on the little fella, How you doin?', () => {
+        const pet = new Pet('Fido');
+        pet.fitness >=3 && pet.hunger <= 5;
+        expect(console.log('I need a walk AND I am hungry!'))
+    });
+});
+
+describe('constructor', () => {
+    it('Checks on the little fella, How you doin?', () => {
+        const pet = new Pet('Fido');
+        pet.fitness < 3 && pet.hunger < 5;
+        expect(console.log('I feel great!'))
+    });
+});
