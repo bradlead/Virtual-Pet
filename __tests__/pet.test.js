@@ -60,3 +60,21 @@ describe('constructor', () => {
         expect(pet.fitness).toEqual(10);
     });
 });
+
+describe('constructor',() => {
+    it('It will feed the hungry Tamagotchi until it is hungry no more', () => {
+        const pet = new Pet('Fido');
+        pet.hunger = 8;
+        pet.feed();
+        expect(pet.hunger).toEqual(5);
+    });
+});
+
+describe('constructor', () => {
+    it('Tamagotchi hunger levels will not drop below 0', () => {
+        const pet = new Pet('Fido');
+        pet.hunger = 2;
+        pet.feed();
+        expect(pet.hunger).toEqual(0);
+    });
+});
